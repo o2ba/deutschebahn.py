@@ -28,15 +28,13 @@ class oPoint:
         :return: Station object or None
         """
 
-        StaDa = db.get_stations(ril100=self.ril100)
+        StaDa = db.get_Stations(ril100=self.ril100)
         les = len(StaDa)
 
         if les == 0:
             return None
-        elif les == 1:
-            return StaDa[0]
         else:
-            print(f"ERROR!!!!!!!!!!! MORE THAN 1 RESULT FOR {self.fullname}, {self.ril100}")
+            return StaDa[0]
 
     def get_region_name(self) -> str or None:
         region_list = ["Ost", "Südost", "Nord", "West", "Mitte", "Südwest", "Süd"]

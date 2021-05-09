@@ -8,7 +8,7 @@ url = "https://api.deutschebahn.com/stada/v2"
 __STATIONS_LIST__ = None
 
 
-def get_stations(offset: int = 0, limit: int = 1000, searchstring: str = None, category: str = "1-7",
+def get_Stations(offset: int = 0, limit: int = 1000, searchstring: str = None, category: str = "1-7",
                  federalstate: str = None, eva: str = None,
                  ril100: str = None, logicaloperator: str = "AND", return_http_code: bool = False) -> int or list:
     """
@@ -116,7 +116,7 @@ def get_Stations_for_oPoints(oPoint_list: [db.oPoint], force_update=False, force
     global __STATIONS_LIST__
 
     if __STATIONS_LIST__ is None or force_update is True:
-        gSt = get_stations(limit=10000)
+        gSt = get_Stations(limit=10000)
         __STATIONS_LIST__ = gSt if gSt != [] else None
 
     # List that will be populated with the matches
