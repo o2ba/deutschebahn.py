@@ -9,11 +9,11 @@ https://deutschebahn.readthedocs.io/en/latest/
 
 Current modules:
 * Betriebsstellen
+* StaDa
 
 TBD:
 * Fahrplan
 * Timetables
-* StaDa
 
 More specific API requests will be added later on, right now all 
 it can return is the pure results from the website.
