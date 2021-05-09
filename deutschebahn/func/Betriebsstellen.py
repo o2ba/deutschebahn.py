@@ -32,7 +32,7 @@ def get_oPoints_by_name(search_string: str, return_http_code=False) -> list or i
 
     result = get_json()
 
-    if return_http_code is True and result[1] != 200:
+    if return_http_code is True and result[0] != 200:
         # if return_http_code is enabled and non-200 result
         return result[0]
     elif result[0] != 200:
