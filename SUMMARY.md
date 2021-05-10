@@ -1,5 +1,5 @@
 # Table of contents
 
 * [Getting Started](README.md)
-* [Betriebsstellen](betriebsstellen.md)
+* [oPoint / Betriebsstellen](betriebsstellen.md)
 
